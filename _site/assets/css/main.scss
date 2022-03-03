@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Prompt:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  background-image: url(../images/background.png);
+  font-family: "Prompt", sans-serif;
+}
+
+.container {
+  height: 5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  clear: both;
+}
+
+nav {
+  float: right;
+}
+
+.logo img {
+  float: left;
+  margin-left: 2em;
+  height: 3em;
+  width: 3em;
+}
+
+ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+}
+
+ul li:hover {
+  color: orange;
+}
+
+section {
+  padding: 2em;
+}
+
+.main-title {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #36454f;
+  text-align: center;
+}
+
+.head-main {
+  padding-top: 3em;
+}
+.head-section {
+  padding-top: 5em;
+  padding-left: 1.5em;
+}
+
+.sub-description {
+  padding-top: 2em;
+}
+.paragraph {
+  font-size: 1.1em;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  padding: 3em;
+}
+
+.short-story {
+  height: 33em;
+  padding: 1.5em;
+  margin-right: 1.5em;
+  background-color: rgb(243, 243, 243);
+}
+
+.main-wrapper {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(45vw, 1fr));
+}
+
+.row-one {
+  background-color: rgb(157, 163, 177);
+  // background-image: url(../images/first.png);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  height: 75vh;
+  margin-right: 1em;
+}
+
+.row-two {
+  background-color: rgb(227, 229, 235);
+  height: 75vh;
+}
+
+.twosections {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+}
+
+.seal {
+  font-family: "Monoton", sans-serif;
+  font-size: 5em;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 30%;
+  line-height: 1em;
+}
+
+.middle-box {
+  z-index: 3;
+  position: absolute;
+  margin-top: 15vh;
+  margin-left: 39vw;
+}
+
+.two-down {
+  font-family: "Monoton", sans-serif;
+  font-size: 5em;
+  font-weight: 400;
+  padding-top: 30%;
+  text-align: center;
+  line-height: 1em;
+}
+
+.no-underline {
+  text-decoration: none;
+  color: rgb(92, 95, 107);
+}
+.no-underline-two {
+  text-decoration: none;
+  color: rgb(92, 95, 107);
+}
+
+.mail {
+  background-color: blue;
+  height: 100%;
+}
+
+//======== test of second one ========//
+
+.navbar {
+  background-color: #1f1e1e;
+  width: 100vw;
+  height: 3em;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+}
