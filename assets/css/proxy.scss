@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Prompt:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
 
@@ -43,9 +42,24 @@ body {
 // .main-container {
 //   height: 700px;
 // }
+
+.subsectiontexttop {
+  width: 30%;
+  line-height: 1.2em;
+  margin-top: 1em;
+  margin-left: 60em;
+}
+
+.subsectiontext {
+  width: 27%;
+  line-height: 1.2em;
+  margin-top: 1em;
+  margin-left: 63em;
+}
+
 .mainTitle {
   font-family: "Special Elite", cursive;
-  font-size: 5em;
+  font-size: 8em;
   margin-bottom: 0px;
   line-height: 1.1em;
 }
@@ -482,5 +496,26 @@ nav {
   }
   .post {
     height: 6vh;
+  }
+  .subsectiontexttop {
+    line-height: 1.2em;
+    margin-top: 3em;
+    margin-left: 0.5em;
+  }
+
+  .subsectiontext {
+    line-height: 1.2em;
+    margin-top: 1em;
+    margin-left: 1em;
+    width: 100%;
+  }
+  .main-container {
+    height: 650px;
+  }
+  .mainTitle {
+    font-size: 5em;
+  }
+  .section-title-planning {
+    width: 90%;
   }
 }
