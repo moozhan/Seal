@@ -284,6 +284,7 @@ li.lined.thin {
   letter-spacing: 0.06em;
   width: 35%;
   margin-bottom: 2vh;
+  margin-left: 0.1em;
   margin-top: 2vh;
 }
 
@@ -388,6 +389,15 @@ a {
   padding: 3em;
 }
 
+.index-post-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(600px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-row-gap: 1em;
+  margin-top: 5em;
+}
+
 .container {
   height: 5em;
   padding-left: 2em;
@@ -433,12 +443,54 @@ nav {
   font-family: "Special Elite", cursive;
 }
 
+.post-content-paragraphs p {
+  padding-left: 3.5vw;
+  margin-top: 1%;
+  color: black;
+  font-size: 1.2em;
+  font-family: "Quicksand", sans-serif;
+}
+
 .main-text-paragraph {
   padding-left: 3.5vw;
   margin-top: 1%;
   color: black;
   font-size: 1.2em;
   font-family: "Quicksand", sans-serif;
+}
+
+#wrap {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball {
+  pointer-events: none;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: gray;
+  -webkit-animation: implode 1s ease-in-out;
+          animation: implode 1s ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  opacity: 0.5;
+}
+
+@-webkit-keyframes implode {
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes implode {
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
 }
 
 @media screen and (max-width: 1200px) {

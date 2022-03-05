@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seal On The Beach</title>
+    <link href="../../assets/css/proxy.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="left" role="navigation">
+            <p class="vertical">Scroll Down ...</p>
+    </div>
+    <div class="right">
+        <div class="container">
+        <nav>
+            <ul class="navbar">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/planning.html">Rediscovering</a>
+                </li>
+                <li>
+                    <a href="/opinion.html">Opinions</a>
+                </li>
+                <li>
+                    <a href="/random.html">Collection</a>
+                </li>
+            </ul>
+          </nav>
+        </div>
+
+    {% block content %}
+      {{ content | safe }}
+    {% endblock content %}
+  </div>
+</body>
+</html>

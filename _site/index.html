@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
     <title>Seal On The Beach</title>
     <link href="assets/css/proxy.css" rel="stylesheet">
 
@@ -14,7 +16,7 @@
     <!-- Sidebar End -->
     </div>
     <div class="right">
-        <div class="main-container">
+        <div class="main-container"  id="wrap">
             <div style="display: flex; width: 100%;">
                 <div class="title">
                     <h1 class="mainTitle">Seal</h1>
@@ -63,80 +65,186 @@
 
         <!-- </div> -->
         <div class="main-container-section">
-            <h1 class="section-title-planning">Rediscovering Planning</h1>
-            <ul style="list-style: none;">
-                <a href="planning">
-                    <li class="lined thin" style="background-color: rgb(241, 242, 248); margin-top: 1%; margin-bottom: 1%;"> 
+            <h1 class="section-title-opinion">Rediscovering Planning</h1>
+            <ul style="list-style: none;" class="index-post-list">
+                
+                    <a href="/plannings/planning0/">
+                        <li class="lined thin" style="background-color: rgb(241, 242, 248); margin-top: 1%; margin-bottom: 1%;"> 
                             <div>
-                                <h3 class="post-title" > Title </h3>
+                                <h3 class="post-title" > Intro </h3>
                             </div>
                     </li>
-                </a>
-                <li class="lined thin" style="background-color: rgb(241, 242, 248); margin-top: 1%; margin-bottom: 1%;"> 
-                    <div >
-                        <a class="post-title" > Title </a>
-                    </div>
-                </li>
-                <li class="lined thin" style="background-color: rgb(241, 242, 248); margin-top: 1%; margin-bottom: 1%;"> 
-                    <div >
-                        <a class="post-title" > Title </a>
-                    </div>
-                </li>    
+                    </a>
+                
+                    <a href="/plannings/planning1/">
+                        <li class="lined thin" style="background-color: rgb(241, 242, 248); margin-top: 1%; margin-bottom: 1%;"> 
+                            <div>
+                                <h3 class="post-title" > That Guy Who Knew About War </h3>
+                            </div>
+                    </li>
+                    </a>
+                
+                    <a href="/plannings/planning2/">
+                        <li class="lined thin" style="background-color: rgb(241, 242, 248); margin-top: 1%; margin-bottom: 1%;"> 
+                            <div>
+                                <h3 class="post-title" > Intro </h3>
+                            </div>
+                    </li>
+                    </a>
+                
+                    <a href="/plannings/planning3/">
+                        <li class="lined thin" style="background-color: rgb(241, 242, 248); margin-top: 1%; margin-bottom: 1%;"> 
+                            <div>
+                                <h3 class="post-title" > Intro </h3>
+                            </div>
+                    </li>
+                    </a>
+                 
                 </ul>
-                <a href="opinion">
+                <a href="planning">
                     <h3 class="section-title-planning" style="font-size: 1.5em;">Click to see all ➽</h3>
                 </a>
         </div>
         <div class="main-container-section">
             <h1 class="section-title-opinion"> [Unpopular] Opinions</h1>
-                <ul style="list-style: none;">
-                    <li class="lined thin" style="background-color: rgb(229, 219, 233); margin-top: 1%; margin-bottom: 1%;"> 
-                        <a href="opinion">
-                            <div >
-                                <h3 class="post-title">Title </h3>
-                            </div>
+                <ul style="list-style: none;" class="index-post-list">
+                    
+                        <a href="/collections/collection0/">
+                            <li class="lined thin" style="background-color: rgb(229, 219, 233); margin-top: 1%; margin-bottom: 1%;"> 
+                                <div>
+                                    <h3 class="post-title" > Intro </h3>
+                                </div>
+                        </li>
                         </a>
-                    </li>
-                    <li class="lined thin" style="background-color: rgb(229, 219, 233); margin-top: 1%; margin-bottom: 1%;"> 
-                        <div >
-                            <h3 class="post-title" > Title </h3>
-                        </div>
-                    </li>
-                    <li class="lined thin" style="background-color: rgb(229, 219, 233); margin-top: 1%; margin-bottom: 1%;"> 
-                        <div >
-                            <h3 class="post-title" > Title </h3>
-                        </div>
-                    </li>
+                    
+                        <a href="/collections/collection1/">
+                            <li class="lined thin" style="background-color: rgb(229, 219, 233); margin-top: 1%; margin-bottom: 1%;"> 
+                                <div>
+                                    <h3 class="post-title" > Intro </h3>
+                                </div>
+                        </li>
+                        </a>
+                    
+                        <a href="/collections/collection2/">
+                            <li class="lined thin" style="background-color: rgb(229, 219, 233); margin-top: 1%; margin-bottom: 1%;"> 
+                                <div>
+                                    <h3 class="post-title" > Intro </h3>
+                                </div>
+                        </li>
+                        </a>
+                    
+                        <a href="/collections/collection3/">
+                            <li class="lined thin" style="background-color: rgb(229, 219, 233); margin-top: 1%; margin-bottom: 1%;"> 
+                                <div>
+                                    <h3 class="post-title" > Intro </h3>
+                                </div>
+                        </li>
+                        </a>
+                     
                 </ul>
-                <a href="opinion">
+                <a href="opinions">
                     <h3 class="section-title-planning" style="font-size: 1.5em;">Click to see all ➽</h3>
                 </a>
         </div>
         <div class="main-container-section">
-            <h1 class="section-title-random">Random Collections</h1>
-            <ul style="list-style: none;"> 
-                <li class="lined thin" style="background-color: rgb(241, 242, 248); margin-top: 1%; margin-bottom: 1%;"> 
-                    <a href="random">
-                        <div >
-                            <h3 class="post-title" > Title </h3>
-                        </div>
+            <h1 class="section-title-opinion">Random Collections</h1>
+            <ul style="list-style: none;" class="index-post-list"> 
+                
+                    <a href="/opinions/opinion0/">
+                        <li class="lined thin" style="background-color: rgb(250, 243, 215); margin-top: 1%; margin-bottom: 1%;"> 
+                            <div>
+                                <h3 class="post-title" > Intro </h3>
+                            </div>
+                    </li>
                     </a>
-                </li>
-                <li class="lined thin" style="background-color: rgb(241, 242, 248); margin-top: 1%; margin-bottom: 1%;"> 
-                    <div >
-                        <h3 class="post-title" > Title </h3>
-                    </div>
-                </li>
-                <li class="lined thin" style="background-color: rgb(241, 242, 248); margin-top: 1%; margin-bottom: 1%;"> 
-                    <div >
-                        <h3 class="post-title"> Title </h3>
-                    </div>
-                </li>
+                
+                    <a href="/opinions/opinion1/">
+                        <li class="lined thin" style="background-color: rgb(250, 243, 215); margin-top: 1%; margin-bottom: 1%;"> 
+                            <div>
+                                <h3 class="post-title" > Intro </h3>
+                            </div>
+                    </li>
+                    </a>
+                
+                    <a href="/opinions/opinion2/">
+                        <li class="lined thin" style="background-color: rgb(250, 243, 215); margin-top: 1%; margin-bottom: 1%;"> 
+                            <div>
+                                <h3 class="post-title" > Intro </h3>
+                            </div>
+                    </li>
+                    </a>
+                
+                    <a href="/opinions/opinion3/">
+                        <li class="lined thin" style="background-color: rgb(250, 243, 215); margin-top: 1%; margin-bottom: 1%;"> 
+                            <div>
+                                <h3 class="post-title" > Intro </h3>
+                            </div>
+                    </li>
+                    </a>
+                 
                 </ul>
                 <a href="random">
                     <h3 class="section-title-planning" style="font-size: 1.5em;">Click to see all ➽</h3>
                 </a>
         </div>
     </div>
+    <script>
+        $(document).ready(function () {
+        var mousePos = {};
+
+        function getRandomInt(min, max) {
+            return Math.round(Math.random() * (max - min + 1)) + min;
+        }
+
+        $(window).mousemove(function (e) {
+            mousePos.x = e.pageX;
+            mousePos.y = e.pageY;
+        });
+
+        $(window).mouseleave(function (e) {
+            mousePos.x = -1;
+            mousePos.y = -1;
+        });
+
+        var draw = setInterval(function () {
+            if (mousePos.x > 0 && mousePos.y > 0) {
+            var range = 15;
+
+            var color =
+                "background: rgb(" +
+                getRandomInt(0, 255) +
+                "," +
+                getRandomInt(0, 255) +
+                "," +
+                getRandomInt(0, 255) +
+                ");";
+
+            var sizeInt = getRandomInt(10, 30);
+            size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
+
+            var left =
+                "left: " +
+                getRandomInt(mousePos.x - range - sizeInt, mousePos.x + range) +
+                "px;";
+
+            var top =
+                "top: " +
+                getRandomInt(mousePos.y - range - sizeInt, mousePos.y + range) +
+                "px;";
+
+            var style = left + top + color + size;
+            $("<div class='ball' style='" + style + "'></div>")
+                .appendTo("#wrap")
+                .one(
+                "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+                function () {
+                    $(this).remove();
+                }
+                );
+            }
+        }, 1);
+        });
+
+    </script>
 </body>
 </html>

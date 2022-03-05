@@ -1,0 +1,16 @@
+---
+layout: "base.njk"
+---
+        <h1 class="title-section" style="margin-bottom: 4%;">Rediscovering Planning</h1>
+        <ul class="main-container-planning-two" style="list-style: none;">
+                        {% for collection in collections.collection %}
+                            <a href="{{collection.url}}">
+                                <li class="lined thin high intro" style="background-color: rgb(248, 250, 244);"> 
+                                    <h1 class="content-link">{{collection.data.number}}.</h1>
+                                    <h4 class="content-link-title">{{collection.data.title}}</h4>
+                                    <h4 class="content-link-title">{{collection.data.subtitle}}</h4>
+                                </li>
+                            </a>
+						{% endfor %}
+            </ul>
+    </div>

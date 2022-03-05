@@ -1,51 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seal On The Beach</title>
-    <link href="../assets/css/proxy.css" rel="stylesheet">
-
-</head>
-<body>
-    <div class="left" role="navigation">
-            <p class="vertical">Scroll Down ...</p>
-    </div>
-    <div class="right">
-        <div class="container">
-            <nav>
-                <ul class="navbar">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/planning.html">Rediscovering</a>
-                    </li>
-                    <li>
-                        <a href="/opinion.html">Opinions</a>
-                    </li>
-                    <li>
-                        <a href="/random.html">Collection</a>
-                    </li>
-                </ul>
-            </nav>
-            </div>
+---
+layout: "base.njk"
+---
             <h1 class="title-section" style="margin-bottom: 4%;">Random Collections</h1>
             <ul class="main-container-random" style="list-style: none;">
-                <li class="low intro" style="background-color: rgb(244, 246, 250);"> 
-                    <h4 class="content-link">Visualizing Change Techniques</h4>
-                </li>
-                <li class="low intro" style="background-color: rgb(244, 246, 250);"> 
-                    <h4 class="content-link">Old Urban Games</h4>
-                </li>
-                <li class="low intro" style="background-color: rgb(244, 246, 250);">
-                    <h4 class="content-link">Title</h4>
-                </li>
-                <li class="low intro" style="background-color: rgb(244, 246, 250);">
-                    <h4 class="content-link">Title</h4>
-                </li>
+                {% for opinion in collections.opinions %}
+                    <a href="{{opinion.url}}">
+                        <li class="low intro" style="background-color: rgb(250, 243, 215);"> 
+                            <h4 class="content-link">Visualizing Change Techniques</h4>
+                        </li>
+                    </a>
+                {% endfor %} 
+
             </ul>
     </div>
-</body>
-</html>
