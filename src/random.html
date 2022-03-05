@@ -3,10 +3,10 @@ layout: "base.njk"
 ---
             <h1 class="title-section" style="margin-bottom: 4%;">Random Collections</h1>
             <ul class="main-container-random" style="list-style: none;">
-                {% for opinion in collections.opinions %}
-                    <a href="{{opinion.url}}">
-                        <li class="low intro" style="background-color: rgb(250, 243, 215);"> 
-                            <h4 class="content-link">Visualizing Change Techniques</h4>
+                {% for collection in collections.collections %}
+                    <a href="{{collection.url}}">
+                        <li class="low intro" style="background-color: rgb(205, 214, 202);"> 
+                            <h4 class="content-link">{{collection.data.title}}</h4>
                         </li>
                     </a>
                 {% endfor %} 

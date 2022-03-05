@@ -3,22 +3,16 @@ layout: "base.njk"
 ---
             <h1 class="title-section" style="margin-bottom: 4%;">[Unpopular] Opinions</h1>
             <ul class="main-container-planning-two" style="list-style: none;">
-                <li class="lined thin high intro" style="background-color: rgb(229, 219, 233);"> 
-                    <h3 class="content-link" style="margin-top:1em;">The Interaction</h3>
-                    <p style="margin-top:1em;  font-size: 0.7em; font-family: 'Special Elite', cursive; line-height: 1.2em;">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </li>
-                <li class="lined thin high" style="background-color: rgb(229, 219, 233);"> 
-                    <h3 class="content-link" style="margin-top:1em;">The Interaction</h3>
-                    <p style="margin-top:1em;  font-size: 0.7em; font-family: 'Special Elite', cursive; line-height: 1.2em;">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </li>
-                <li class="lined thin high" style="background-color: rgb(229, 219, 233);">
-                    <h3 class="content-link" style="margin-top:1em;">The Interaction</h3>
-                    <p style="margin-top:1em;  font-size: 0.7em; font-family: 'Special Elite', cursive; line-height: 1.2em;">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </li>
-                <li class="lined thin high" style="background-color: rgb(229, 219, 233);">
-                    <h3 class="content-link" style="margin-top:1em;">The Interaction</h3>
-                    <p style="margin-top:1em;  font-size: 0.7em; font-family: 'Special Elite', cursive; line-height: 1.2em;">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </li>
+                {% for opinion in collections.opinions %}
+                    <a href="{{opinion.url}}">
+                        <li class="lined thin high intro" style="background-color: rgb(229, 219, 233);"> 
+                            <h1 class="content-link">{{opinion.data.number}}.</h1>
+                            <h4 class="content-link-title">{{opinion.data.title}}</h4>
+                            <p style="margin-top:1em;  font-size: 0.7em; font-family: 'Special Elite', cursive; line-height: 1.2em;">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+                        </li>
+                    </a>
+                {% endfor %}
 
             </ul>
     </div>
