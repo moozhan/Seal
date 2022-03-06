@@ -42,7 +42,10 @@ body {
 // .main-container {
 //   height: 700px;
 // }
-
+main {
+  overflow-x: hidden;
+  display: flex;
+}
 .subsectiontexttop {
   width: 30%;
   line-height: 1.2em;
@@ -279,7 +282,7 @@ li.lined.thin {
   margin-left: 45%;
 }
 .section-title-opinion {
-  font-size: 4.5em;
+  font-size: 2.5em;
   letter-spacing: 0.06em;
   width: 35%;
   margin-bottom: 2vh;
@@ -314,10 +317,15 @@ li.lined.thin {
   padding-left: 6em;
   padding-right: 6em;
   padding-bottom: 2em;
+
+  p {
+    line-height: 1.3em;
+    margin-left: 0.5em;
+  }
 }
 
 .post-title {
-  font-size: 1em;
+  font-size: 0.5em;
 }
 
 a {
@@ -381,7 +389,7 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
   grid-row-gap: 1em;
-  margin-top: 5em;
+  margin-top: 3em;
 }
 // .intro:hover {
 //   background-image: url("../images/four-4.jpg");
@@ -511,7 +519,7 @@ nav {
     margin: 0;
   }
   .section-title-planning {
-    font-size: 2.5em;
+    font-size: 0.5em;
     letter-spacing: 0.06em;
     margin-left: 0.5em;
     margin-top: 0.5em;
