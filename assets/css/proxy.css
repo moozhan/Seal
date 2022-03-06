@@ -320,10 +320,6 @@ li.lined.thin {
   font-family: "Special Elite", cursive;
   font-weight: bold;
   border: 1px dashed #d8d8d8;
-  padding-top: 1em;
-  padding-left: 6em;
-  padding-right: 6em;
-  padding-bottom: 2em;
 }
 
 .main-container-section p {
@@ -555,8 +551,6 @@ nav {
   .section-title-opinion {
     font-size: 2.5em;
     letter-spacing: 0.06em;
-    margin-left: 0.5em;
-    margin-top: 0.5em;
   }
   .section-title-random {
     font-size: 2.5em;

@@ -65,69 +65,70 @@
             <h3 class="intro-text"> C: "But it's accurate."</h3>
 
         </div> -->
-        <main>
-
-        <div class="main-container-section">
-            <h1 class="section-title-opinion">Rediscovering Planning</h1>
-            <p>I have been urban planning student, researcher, have taught courses and have I have been urban planning student, researcher, have taught courses and haveI have been urban planning student, researcher, have taught courses and haveI have been urban planning student, researcher, have taught courses and have</p>
-                        <p>I have been urban planning student, researcher, have taught courses and have I have been urban planning student, researcher, have taught courses and haveI have been urban planning student, researcher, have taught courses and haveI have been urban planning student, researcher, have taught courses and have</p>
-
-            <ul style="list-style: none;" class="index-post-list">
-                {% for planning in collections.plannings %}
-                    <a href="{{planning.url}}">
-                        <li class="lined thin" style="background-color: rgb(241, 242, 248); margin-top: 1%; margin-bottom: 1%;"> 
-                            <div>
-                                <h3 class="post-title" > {{planning.data.title}} </h3>
-                            </div>
-                        </li>
-                    </a>
-                {% endfor %} 
-                </ul>
-                <a href="planning">
-                    <h3 class="section-title-planning" style="font-size: 1.5em;">Click to see all ➽</h3>
-                </a>
-        </div>
-        <div class="main-container-section">
-            <h1 class="section-title-opinion"> [Unpopular] Opinions</h1>
-            <p>I have been urban planning student, researcher, have taught courses and have I have been urban planning student, researcher, have taught courses and haveI have been urban planning student, researcher, have taught courses and haveI have been urban planning student, researcher, have taught courses and have</p>
+        <!-- <main> -->
+        <div style="display: flex; max-width: 100%;">
+            <div class="main-container-section" style="flex: 33%;">
+                <h1 class="section-title-opinion" style="padding: 0.5em;">Rediscovering Planning</h1>
+                <p  style="padding: 1.3em;">I have been urban planning student, researcher, have taught courses and have I have been urban planning student, researcher, have taught courses and haveI have been urban planning student, researcher, have taught courses and haveI have been urban planning student, researcher, have taught courses and have</p>
+                <p style="padding: 1.3em;">I have been urban planning student, researcher, have taught courses and have I have been urban planning student, researcher, have taught courses and haveI have been urban planning student, researcher, have taught courses and haveI have been urban planning student, researcher, have taught courses and have</p>
 
                 <ul style="list-style: none;" class="index-post-list">
-                    {% for collection in collections.collections %}
-                        <a href="{{collection.url}}">
-                            <li class="lined thin" style="background-color: rgb(229, 219, 233); margin-top: 1%; margin-bottom: 1%;"> 
+                    {% for planning in collections.plannings %}
+                        <a href="{{planning.url}}">
+                            <li class="lined thin" style="background-color: rgb(241, 242, 248); margin-top: 1%; margin-bottom: 1%;"> 
                                 <div>
-                                    <h3 class="post-title" > {{collection.data.title}} </h3>
+                                    <h3 class="post-title" > {{planning.data.title}} </h3>
+                                </div>
+                            </li>
+                        </a>
+                    {% endfor %} 
+                    </ul>
+                    <a href="planning">
+                        <h3 class="section-title-planning" style="font-size: 1.5em;">Click to see all ➽</h3>
+                    </a>
+=            </div>
+            <div class="main-container-section" style="flex: 33%;">
+                <h1 class="section-title-opinion"> [Unpopular] Opinions</h1>
+                <p>I have been urban planning student, researcher, have taught courses and have I have been urban planning student, researcher, have taught courses and haveI have been urban planning student, researcher, have taught courses and haveI have been urban planning student, researcher, have taught courses and have</p>
+
+                    <ul style="list-style: none;" class="index-post-list">
+                        {% for collection in collections.collections %}
+                            <a href="{{collection.url}}">
+                                <li class="lined thin" style="background-color: rgb(229, 219, 233); margin-top: 1%; margin-bottom: 1%;"> 
+                                    <div>
+                                        <h3 class="post-title" > {{collection.data.title}} </h3>
+                                    </div>
+                            </li>
+                            </a>
+                        {% endfor %} 
+                    </ul>
+                    <a href="opinions">
+                        <h3 class="section-title-planning" style="font-size: 1.5em;">Click to see all ➽</h3>
+                    </a>
+            </div>
+            <div class="main-container-section" style="flex: 33%;">
+                <h1 class="section-title-opinion">Random Collections</h1>
+                <p>I have been urban planning student, researcher, have taught courses and have I have been urban planning student, researcher, have taught courses and haveI have been urban planning student, researcher, have taught courses and haveI have been urban planning student, researcher, have taught courses and have</p>
+
+                <ul style="list-style: none;" class="index-post-list"> 
+                    {% for opinion in collections.opinions %}
+                        <a href="{{opinion.url}}">
+                            <li class="lined thin" style="background-color: rgb(205, 214, 202); margin-top: 1%; margin-bottom: 1%;"> 
+                                <div>
+                                    <h3 class="post-title" > {{opinion.data.title}} </h3>
                                 </div>
                         </li>
                         </a>
                     {% endfor %} 
-                </ul>
-                <a href="opinions">
-                    <h3 class="section-title-planning" style="font-size: 1.5em;">Click to see all ➽</h3>
-                </a>
-        </div>
-        <div class="main-container-section">
-            <h1 class="section-title-opinion">Random Collections</h1>
-            <p>I have been urban planning student, researcher, have taught courses and have I have been urban planning student, researcher, have taught courses and haveI have been urban planning student, researcher, have taught courses and haveI have been urban planning student, researcher, have taught courses and have</p>
-
-            <ul style="list-style: none;" class="index-post-list"> 
-                {% for opinion in collections.opinions %}
-                    <a href="{{opinion.url}}">
-                        <li class="lined thin" style="background-color: rgb(205, 214, 202); margin-top: 1%; margin-bottom: 1%;"> 
-                            <div>
-                                <h3 class="post-title" > {{opinion.data.title}} </h3>
-                            </div>
-                    </li>
+                    </ul>
+                    <a href="random">
+                        <h3 class="section-title-planning" style="font-size: 1.5em;">Click to see all ➽</h3>
                     </a>
-                {% endfor %} 
-                </ul>
-                <a href="random">
-                    <h3 class="section-title-planning" style="font-size: 1.5em;">Click to see all ➽</h3>
-                </a>
+            </div>
         </div>
-    </main>
+    <!-- </main> -->
     </div>
-    <script>
+    <!-- <script>
         const scrollContainer = document.querySelector("main");
 
         scrollContainer.addEventListener("wheel", (evt) => {
@@ -135,7 +136,7 @@
             scrollContainer.scrollLeft += evt.deltaY;
         });
 
-    </script>
+    </script> -->
     <script>
         $(document).ready(function () {
         var mousePos = {};
