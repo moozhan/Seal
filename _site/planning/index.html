@@ -13,7 +13,7 @@
             <p class="vertical">Scroll Down ...</p>
     </div>
     <div class="right">
-        <div class="container">
+        <div class="container menu">
         <nav>
             <ul class="navbar">
                 <li>
@@ -31,12 +31,26 @@
             </ul>
           </nav>
         </div>
-
+            <div class="topnav">
+                <a href="#home" class="active"></a>
+                <div id="myLinks">
+                    <a href="/">Home</a>
+                    <a href="/planning">Rediscovering</a>
+                    <a href="/opinions">Opinions</a>
+                    <a href="/random">Collections</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    <div class="icon-ham"></div>
+                    <div class="icon-ham"></div>
+                    <div class="icon-ham"></div>
+                </a>
+            </div>
     
               <h1 class="title-section" style="margin-bottom: 4%;">Rediscovering Planning</h1>
         <ul class="main-container-planning-two" style="list-style: none;">
                         
-                            <a href="/plannings/planning0/">
+                            <a href="/plannings/0/">
                                 <li class="lined thin high intro" style="background-color: rgb(248, 250, 244);"> 
                                     <h1 class="content-link">0.</h1>
                                     <h4 class="content-link-title">Intro</h4>
@@ -44,27 +58,11 @@
                                 </li>
                             </a>
 						
-                            <a href="/plannings/planning1/">
+                            <a href="/plannings/1/">
                                 <li class="lined thin high intro" style="background-color: rgb(248, 250, 244);"> 
                                     <h1 class="content-link">1.</h1>
                                     <h4 class="content-link-title">That Guy Who Knew About War</h4>
                                     <h4 class="content-link-title">John R. Raser</h4>
-                                </li>
-                            </a>
-						
-                            <a href="/plannings/planning2/">
-                                <li class="lined thin high intro" style="background-color: rgb(248, 250, 244);"> 
-                                    <h1 class="content-link">0.</h1>
-                                    <h4 class="content-link-title">Intro</h4>
-                                    <h4 class="content-link-title">The Interaction</h4>
-                                </li>
-                            </a>
-						
-                            <a href="/plannings/planning3/">
-                                <li class="lined thin high intro" style="background-color: rgb(248, 250, 244);"> 
-                                    <h1 class="content-link">0.</h1>
-                                    <h4 class="content-link-title">Intro</h4>
-                                    <h4 class="content-link-title">The Interaction</h4>
                                 </li>
                             </a>
 						
@@ -73,4 +71,14 @@
     
   </div>
 </body>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 </html>

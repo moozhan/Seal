@@ -13,7 +13,7 @@
             <p class="vertical">Scroll Down ...</p>
     </div>
     <div class="right">
-        <div class="container">
+        <div class="container menu">
         <nav>
             <ul class="navbar">
                 <li>
@@ -31,31 +31,45 @@
             </ul>
           </nav>
         </div>
-
+            <div class="topnav">
+                <a href="#home" class="active"></a>
+                <div id="myLinks">
+                    <a href="/">Home</a>
+                    <a href="/planning">Rediscovering</a>
+                    <a href="/opinions">Opinions</a>
+                    <a href="/random">Collections</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    <div class="icon-ham"></div>
+                    <div class="icon-ham"></div>
+                    <div class="icon-ham"></div>
+                </a>
+            </div>
     
                   <h1 class="title-section" style="margin-bottom: 4%;">Random Collections</h1>
             <ul class="main-container-random" style="list-style: none;">
                 
                     <a href="/collections/collection0/">
-                        <li class="low intro" style="background-color: rgb(205, 214, 202);"> 
+                        <li class="low intro" style="background-color: rgb(241, 241, 216);"> 
                             <h4 class="content-link">Intro</h4>
                         </li>
                     </a>
                 
                     <a href="/collections/collection1/">
-                        <li class="low intro" style="background-color: rgb(205, 214, 202);"> 
+                        <li class="low intro" style="background-color: rgb(241, 241, 216);"> 
                             <h4 class="content-link">Intro</h4>
                         </li>
                     </a>
                 
                     <a href="/collections/collection2/">
-                        <li class="low intro" style="background-color: rgb(205, 214, 202);"> 
+                        <li class="low intro" style="background-color: rgb(241, 241, 216);"> 
                             <h4 class="content-link">Intro</h4>
                         </li>
                     </a>
                 
                     <a href="/collections/collection3/">
-                        <li class="low intro" style="background-color: rgb(205, 214, 202);"> 
+                        <li class="low intro" style="background-color: rgb(241, 241, 216);"> 
                             <h4 class="content-link">Intro</h4>
                         </li>
                     </a>
@@ -67,4 +81,14 @@
     
   </div>
 </body>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 </html>

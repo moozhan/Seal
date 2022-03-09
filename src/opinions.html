@@ -6,9 +6,9 @@ layout: "base.njk"
                 {% for opinion in collections.opinions %}
                     <a href="{{opinion.url}}">
                         <li class="lined thin high intro" style="background-color: rgb(229, 219, 233);"> 
-                            <h1 class="content-link">{{opinion.data.number}}.</h1>
-                            <h4 class="content-link-title">{{opinion.data.title}}</h4>
-                            <p style="margin-top:1em;  font-size: 0.7em; font-family: 'Special Elite', cursive; line-height: 1.2em;">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            <h2 class="content-link">{{opinion.data.title}}.</h2>
+                            <h4 class="content-link-title">{{opinion.data.subtitle}}</h4>
+                            <p class="summary" style="margin-top:1em;  font-size: 0.7em; font-family: 'Special Elite', cursive; line-height: 1.2em;">{{opinion.data.summary}}</p>
 
                         </li>
                     </a>

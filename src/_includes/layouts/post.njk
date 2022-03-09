@@ -1,14 +1,16 @@
 {% extends "base.njk" %}
 
 {% block content %}
-
+    <div class="left" role="navigation">
+            <p class="vertical">Scroll Down ...</p>
+    </div>
+    <div class="centered_post">
     <h1 class="title-section">{{title}}; {{subtitle}}</h1>
-    <h3 class="main-text-paragraph"> Published on: {{published}}</h3>
-    <h3 class="main-text-paragraph" style="margin-bottom: 3%;"> By: {{author}}</h3>
-
-    <div style="width: 60%; line-height: 1.6em;" class="post-content-paragraphs">
+    <div class="post-content-paragraphs">
 
       {{ content | safe }}
     </div>
+    </div>
+    <div class="gap" style="height: 5em;">
 
 {% endblock content %}
